@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#34a853">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <title>¡Basta!</title>
+</head>
+<body>
+    <div class="app">
+        <h1>¡Basta!</h1>
+        <div id="setup">
+            <input type="text" id="playerName" placeholder="Nombre del jugador">
+            <button onclick="startGame()">Iniciar Juego</button>
+        </div>
+        <div id="game" style="display:none;">
+            <h2>Letra: <span id="letter"></span></h2>
+            <form id="bastaForm">
+                <div id="categories"></div>
+                <button type="button" onclick="stopGame()">¡Basta!</button>
+            </form>
+        </div>
+        <div id="results" style="display:none;">
+            <h2>Resultados</h2>
+            <ul id="resultsList"></ul>
+            <button onclick="startGame()">Otra ronda</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
